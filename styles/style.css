@@ -375,6 +375,7 @@
   width: 21px;
   height: 21px;
   margin-top: -5px;
+  margin-inline: auto;
   color: var(--text-button);
   mix-blend-mode: difference;
 }
@@ -496,5 +497,28 @@
 
   .image-span {
     height: 375px;
+  }
+
+  .footer-button {
+    width: 306px;
+    height: 84px;
+    margin-block: 52px 103px;
+    margin-left: 34px;
+    gap: 8px;
+    flex-direction: column;
+  }
+
+  .footer-floppy {
+    width: 21px;
+    height: 21px;
+    margin-top: -5px;
+    color: var(--text-button);
+    mix-blend-mode: difference;
+  }
+
+  .text_title_footer {
+    justify-self: center;
+    margin-block-start: 30px;
+    margin-inline-end: 0px;
   }
 }
