@@ -467,15 +467,15 @@
       </button>
 
       <dialog id="dialog-save" class="dialog-save">
- 
         <svg  class="dialog-svg" fill="currentColor" stroke="currentColor" viewBox="0 0 39 39" width="39" height="39">
           <use href="./svg/floppy-dialog.svg#floppy-dialog"></use>
         </svg>
         <h2 class="text_title_footer">Вставьте дискету, чтобы продолжить</h2>
-        <button class="dialog-button" type="button" onclick="window['dialog-save'].close()">
-          <span class="dialog-button-text">ok</span>
-        </button>
-
+        <form method="dialog">
+          <button class="dialog-button" type="button" onclick="window['dialog-save'].close()">
+            <span class="dialog-button-text">ok</span>
+          </button>
+        </form>
       </dialog> 
     
     </footer>
