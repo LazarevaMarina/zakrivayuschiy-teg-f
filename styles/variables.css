@@ -6,12 +6,14 @@
   --weight-title-font: 700;
   --background-color: #fff;
   --font-color: #000;
-  --repeating-linear-gradient-1: #d3d3d3;
-  --repeating-linear-gradient-2: transparent;
-  --linear-gradient-1: #e7e7e7;
-  --linear-gradient-2: #1a1a1a;
-  --gradient-start: 0.01%;
   --border-color: #000;
   --text-button: #fff;
   --color-heard: #f00;
+  --background-image: repeating-linear-gradient(
+      to left,
+      #d3d3d3 2px,
+      transparent 4px
+    ),
+    repeating-linear-gradient(to top, #d3d3d3 2px, transparent 4px),
+    linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a);
 }
