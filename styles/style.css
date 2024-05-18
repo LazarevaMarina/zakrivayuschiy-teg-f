@@ -45,10 +45,14 @@
   margin-block: 125px 20px;
 }
 
+.main {
+  display: block;
+}
+
 .main_title_header {
   font-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
   margin-block-end: 25px;
-  font-weight: bold;
+  font-weight: var(--weight-title-font, sans-serif), sans-serif;
   line-height: 23px;
   text-transform: uppercase;
 }
@@ -123,9 +127,10 @@
 }
 
 .title_card {
-  line-height: 31px;
+  line-height: 21.78px;
   border-bottom: var(--border-color) solid 2px;
   padding-inline-start: 10px;
+  padding-block: 5px;
 }
 
 .image_span {
@@ -282,12 +287,15 @@
 }
 
 .footer_floppy {
-  width: 21px;
-  height: 21px;
   margin-top: -5px;
   margin-inline: auto;
   color: var(--text-button);
   mix-blend-mode: difference;
+}
+
+.footer_floppy_svg {
+  max-width: 22px;
+  max-height: 22px;
 }
 
 .button__text {
@@ -324,7 +332,7 @@
   grid-column: span 2;
   width: 293px;
   height: 38px;
-  margin: 0 30px 30px 30px;
+  margin: 0 auto 30px 30px;
   border: none;
   background-color: var(--background-color);
   outline: 2px solid var(--border-color);
@@ -406,7 +414,7 @@
   }
 
   .text_card {
-    line-height: 14px;
+    margin: 25px 50px 2px 25px;
   }
 
   .image_span {
@@ -423,16 +431,27 @@
   }
 
   .footer_floppy {
-    width: 21px;
-    height: 21px;
+    width: 28px;
+    height: 28px;
     margin-top: -5px;
     color: var(--text-button);
     mix-blend-mode: difference;
   }
 
+  .footer_floppy_svg {
+    max-width: 29px;
+    max-height: 29px;
+  }
+
   .text_title_footer {
     justify-self: center;
     margin-block-start: 30px;
-    margin-inline-end: 0px;
+    margin-left: 20px;
+    margin-inline-end: 50px;
   }
+
+  .dialog_button {
+    min-width: 257px;
+  }
+
 }

@@ -22,36 +22,38 @@
 }
 
 @media (prefers-color-scheme: dark) {
-  .theme-auto {
+  :root {
     --background-color: #000;
     --font-color: #00cc14;
     --weight-title-font: 785;
     --weight-main-font: 465;
-    --repeating-linear-gradient-1: #000;
-    --linear-gradient-1: #007f0c;
-    --linear-gradient-2: #004306;
-    --gradient-start: 0;
     --border-color: #00cc14;
+    --text-button: #00cc14;
+    --background-image: repeating-linear-gradient(
+        to left,
+        #000 2px,
+        transparent 4px
+      ),
+      repeating-linear-gradient(to top, #000 2px, transparent 4px),
+      linear-gradient(to bottom, #007f0c 0, #004306);
   }
 }
 
-@media (prefers-color-scheme: light) {
-  .theme-auto {
-    --main-font: Inter;
-    --accent-font: PressStart2P;
-    --weight-main-font: 400;
-    --weight-title-font: 700;
-    --background-color: #fff;
-    --font-color: #000;
-    --border-color: #000;
-    --text-button: #fff;
-    --color-heard: #f00;
-    --background-image: repeating-linear-gradient(
-        to left,
-        #d3d3d3 2px,
-        transparent 4px
-      ),
-      repeating-linear-gradient(to top, #d3d3d3 2px, transparent 4px),
-      linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a);
-  }
+:root.theme-auto {
+  --main-font: Inter;
+  --accent-font: PressStart2P;
+  --weight-main-font: 400;
+  --weight-title-font: 700;
+  --background-color: #fff;
+  --font-color: #000;
+  --border-color: #000;
+  --text-button: #fff;
+  --color-heard: #f00;
+  --background-image: repeating-linear-gradient(
+      to left,
+      #d3d3d3 2px,
+      transparent 4px
+    ),
+    repeating-linear-gradient(to top, #d3d3d3 2px, transparent 4px),
+    linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a);
 }

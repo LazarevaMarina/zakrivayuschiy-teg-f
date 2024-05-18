@@ -22,10 +22,6 @@
   }
 }
 
-.main {
-  display: block;
-}
-
 .like-icon .core {
   fill: var(--background-color);
   transition: fill 0.3s linear;
