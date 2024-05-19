@@ -39,7 +39,7 @@
   }
 }
 
-:root.theme-auto {
+:root.theme-light {
   --main-font: Inter;
   --accent-font: PressStart2P;
   --weight-main-font: 400;

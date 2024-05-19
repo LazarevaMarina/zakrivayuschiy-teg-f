@@ -128,6 +128,7 @@
 
 .title_card {
   line-height: 21.78px;
+  font-weight: var(--weight-title-font);
   border-bottom: var(--border-color) solid 2px;
   padding-inline-start: 10px;
   padding-block: 5px;
